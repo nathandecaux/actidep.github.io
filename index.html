@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actidep - Tractometry Resources</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            margin: 20px;
+        }
+        
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        
+        .resources {
+            margin-top: 30px;
+        }
+        
+        .resource-category {
+            margin-bottom: 30px;
+        }
+        
+        .resource-category h2 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 8px;
+        }
+        
+        .resource-list {
+            list-style: none;
+        }
+        
+        .resource-list li {
+            margin-bottom: 12px;
+        }
+        
+        .resource-list a {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            background: #f8f9fa;
+        }
+        
+        .resource-list a:hover {
+            background: #667eea;
+            color: white;
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+        
+        .resource-list a::before {
+            content: "→";
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        .description {
+            font-size: 0.9em;
+            color: #666;
+            display: block;
+            margin-top: 4px;
+            margin-left: 24px;
+        }
+        
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #999;
+            font-size: 0.9em;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Actidep</h1>
+        <p class="subtitle">Resources about Tractometry</p>
+        
+        <div class="resources">
+            <div class="resource-category">
+                <h2>Documentation & Tutorials</h2>
+                <ul class="resource-list">
+                    <li>
+                        <a href="https://github.com/nathandecaux/actidep" target="_blank" rel="noopener noreferrer">
+                            Actidep GitHub Repository
+                            <span class="description">Main project repository with code and documentation</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dipy.org/documentation/latest/examples_built/tracking_introduction/" target="_blank" rel="noopener noreferrer">
+                            DIPY Tractography Introduction
+                            <span class="description">Getting started with tractography using DIPY</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="resource-category">
+                <h2>Research & Papers</h2>
+                <ul class="resource-list">
+                    <li>
+                        <a href="https://www.sciencedirect.com/topics/medicine-and-dentistry/tractography" target="_blank" rel="noopener noreferrer">
+                            Tractography Overview
+                            <span class="description">Comprehensive overview of tractography techniques</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://pubmed.ncbi.nlm.nih.gov/?term=tractometry" target="_blank" rel="noopener noreferrer">
+                            Tractometry Research Papers
+                            <span class="description">Latest research publications on PubMed</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="resource-category">
+                <h2>Tools & Software</h2>
+                <ul class="resource-list">
+                    <li>
+                        <a href="https://dipy.org/" target="_blank" rel="noopener noreferrer">
+                            DIPY - Diffusion Imaging in Python
+                            <span class="description">Python library for diffusion MRI analysis</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/" target="_blank" rel="noopener noreferrer">
+                            FSL - FMRIB Software Library
+                            <span class="description">Comprehensive library of analysis tools for brain imaging data</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.mrtrix.org/" target="_blank" rel="noopener noreferrer">
+                            MRtrix3
+                            <span class="description">Advanced tools for diffusion MRI analysis</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="resource-category">
+                <h2>Community & Support</h2>
+                <ul class="resource-list">
+                    <li>
+                        <a href="https://github.com/nathandecaux/actidep/issues" target="_blank" rel="noopener noreferrer">
+                            Report Issues
+                            <span class="description">Submit bug reports or feature requests</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://neurostars.org/" target="_blank" rel="noopener noreferrer">
+                            NeuroStars Forum
+                            <span class="description">Ask questions and get help from the neuroimaging community</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Actidep - Tractometry Resources</p>
+        </footer>
+    </div>
+</body>
+</html>
